@@ -1,0 +1,19 @@
+Ticket Booking System
+A. Create a Web Application with 3 modules - Passengers, Services, Tickets
+	On Home page 3 links - Passenger Creation, Services Info, Ticket Creation.
+
+B. Passenger to be created using the UI, fields - id, name, mail, tickets
+	Passenger Id to be auto generated & displayed upon creation.	 
+
+C. Services can be hard coded with 5 routes, Ex: Bangalore-Chennai, Bangalore-Hyderabad.
+	Each service is given with an id.
+	Each service is assigned to the cost per seat.
+
+D. To book a ticket, You have to provide user id and service id on ticket booking.
+	Ticket amount to be calculated based on no of seats * cost of each seat.
+	Validate the user id & service id before confirm the ticket generation.
+	If both user and service is valid, show ticket creation success with the following details:
+		Passenger Name, From City to City, Cost of the ticket. 
+
+Use Spring MVC / Spring Boot
+Use MySQL / MongoDB
