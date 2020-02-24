@@ -146,7 +146,7 @@ public class AccessSqlDatapassenger {
 						ticket.setUserid(rs.getInt("user_id"));
 						ticket.setServiceid(rs.getInt("service_id"));
 						ticket.setTicketId(rs.getInt("booking_id"));
-						ticket.setNumberOfSeats(rs.getInt(" no_of_seats"));
+						ticket.setNumberOfSeats(rs.getInt("no_of_seats"));
 						ticket.setCost(rs.getDouble("total_cost"));
 						ticket.setDate(rs.getDate("date"));
 
