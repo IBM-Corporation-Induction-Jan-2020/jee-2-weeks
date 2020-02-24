@@ -13,8 +13,7 @@
   Enter User name <input type="text" name="name"> <br>
    Enter Mail id <input type="text" name="mailid"><br>
   <br>
-  <h1>mJDsjhfuewjfe</h1>
-    <input type="submit" value="submit">
+     <input type="submit" value="submit">
   </form>
 </body>
 </html>
