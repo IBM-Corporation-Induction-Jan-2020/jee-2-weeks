@@ -77,37 +77,36 @@ public class TicketDAO {
 		Query query = new Query();
 		query.addCriteria(Criteria.where("bookingId").is(bookingID));
 	
-		
+		Update update = new Update();
 		MyTickets myt = mo.findOne(query, MyTickets.class,"users");
 		
 		System.out.println(myt);
 
 		switch (serviceID) {
 		case 11:
-			myt.setSer1(myt.getSer1() + noTicket);
-			mo.save(myt);
+			update.set("ser1", myt.getSer1()+noTicket);
+			mo.updateFirst(query, update, "users");
 			break;
 		case 22:
-			myt.setSer2(myt.getSer2() + noTicket);
-			mo.save(myt);
+			update.set("ser2", myt.getSer2()+noTicket);
+			mo.updateFirst(query, update, "users");
 			break;
 		case 33:
-			myt.setSer3(myt.getSer3() + noTicket);
-			mo.save(myt);
+			update.set("ser3", myt.getSer3()+noTicket);
+			mo.updateFirst(query, update, "users");
 			break;
 		case 44:
-			myt.setSer4(myt.getSer4() + noTicket);
-			mo.save(myt);
+			update.set("ser4", myt.getSer4()+noTicket);
+			mo.updateFirst(query, update, "users");
 			break;
 		case 55:
-			myt.setSer5(myt.getSer5() + noTicket);
-			mo.save(myt);
+			update.set("ser5", myt.getSer5()+noTicket);
+			mo.updateFirst(query, update, "users");
 			break;
 
 		default:
 			return false;
 		}
-
 		return true;
 
 	}
