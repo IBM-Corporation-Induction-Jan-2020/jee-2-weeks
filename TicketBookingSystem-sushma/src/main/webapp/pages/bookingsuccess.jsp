@@ -16,6 +16,7 @@
 out.println(" user id :"+ticket.getUserid()+"\n");
 out.println("Service id :"+ticket.getServiceid()+"\n");
  out.println(" from :"+ticket.getFromCity()+"\n");
+  out.println("Date :"+ticket.getDate());
  out.println(" to :"+ticket.getToCity()+"\n");
  out.println(" Total cost :"+ticket.getCost()+"\n");
  out.println(" Number of seats : "+ticket.getNumberOfSeats());
