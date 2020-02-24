@@ -78,7 +78,7 @@ public class TicketDAO {
 		query.addCriteria(Criteria.where("bookingId").is(bookingID));
 	
 		
-		MyTickets myt = mo.findOne(query, MyTickets.class);
+		MyTickets myt = mo.findOne(query, MyTickets.class,"users");
 		
 		System.out.println(myt);
 
