@@ -1,0 +1,30 @@
+
+Classes
+
+
+TicketBookingSystemApplication: Class with main method(execution starts from here).
+
+Passenger creation
+Passenger:Stores passenger properties
+Passenger Controller:This class helps to take  passenger details from UI and store it in database.
+
+Service details display
+ServiceDetailsController: to display service details
+Service-           Bean class with service properties
+
+Ticket booking :
+    To book a ticket, You have to provide user id and service id on ticket booking.
+	Ticket amount to be calculated based on no of seats * cost of each seat.
+	Validate the user id & service id before confirm the ticket generation.
+	If both user and service is valid, show ticket creation success with the following details:
+		Passenger Name, From City to City, Cost of the ticket. 
+Ticket:Stores Ticket details
+
+
+ create table services(service_id int,from_city varchar(30),to_city varchar(30),no_of_available_seats int,cost_per_seat double,PRIMARY KEY(service_id));
+
+insert into  services values(1,'Bangalore','Chennai',20,1500);
+insert into  services values(2,'Bangalore','Mysore',23,500);
+insert into  services values(3,'Bangalore','Goa',18,900);
+insert into  services values(4,'Bangalore','Davanagere',15,700);
+insert into  services values(5,'Bangalore','Mangalore',10,1700);
