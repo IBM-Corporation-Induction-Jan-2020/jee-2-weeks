@@ -79,10 +79,14 @@ public class SystemController {
 		AccessSqlDatapassenger sql = new AccessSqlDatapassenger();
 		System.out.println("USer id is" + userId);
 		ticket = sql.ticketBooking(userId, serviceId, noOfSeats, dateFormat.format(date), ticket);
-        
-		req.setAttribute("ticketbooked", ticket);
-		return "bookingsuccess";
 
+		System.out.println("dnf  " + ticket);
+		if (ticket.bookingId == 0) {
+			return "bookingunsuccessful";
+		} else {
+			req.setAttribute("ticketbooked", ticket);
+			return "bookingsuccess";
+		}
 	}
 
 	@RequestMapping("/EnterUserId")
